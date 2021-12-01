@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scal=1">
+	<title>Assignment solution for Module 2</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+<style type="text/css">
+*{
+	box-sizing: border-box;
+
+}
+.sec1 {
+	width: 175px;
+	border: 1px solid black;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	float: right;
+	background-color: #DC143C;
+	font-family: Geogria,serif, monospace;
+	font-size: 125%;
+	font-weight: bolder;
+}
+.sec2 {
+	width: 200px;
+	border: 1px solid black;
+	background-color: #0000FF;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	float: right;
+	font-family: Geogria,serif, monospace;
+	font-size: 125%;
+	font-weight: bolder;
+	color: white;
+
+}
+.sec3 {
+	width: 250px;
+	border: 1px solid black;
+	background-color: deeppink;
+	margin: 0px;
+	padding: 10px;
+	text-align: center;
+	position: relative;
+	float: right;
+	font-family: Geogria,serif, monospace;
+	font-size: 125%;
+	font-weight: bolder;
+}
+#box1 {
+	width: 80%;
+	height: auto;
+	border: 1px solid black;
+	background-color: gray;
+	margin-left: 1px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+#box2 {
+	width: 80%;
+	height: 30%;
+	border: 1px solid black;
+	background-color: gray;
+	margin-right: 10px;
+	margin-left: 1px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+#box3 {
+	width: 80%;
+	height: auto;
+	border: 1px solid black;
+	background-color: gray;
+	margin-left: 1px;
+	margin-right: 1px;
+	overflow: hidden;
+
+}
+.content{
+	clear: right;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: Geogria,serif, monospace;
+	font-size: 100%;
+	font-weight: bolder;
+
+}
+
+/***********Simple Responsive Framework******/
+.row{
+	width: 100%;
+}
+/***********For Desktop view only***********/
+
+@media (min-width: 992px)
+{
+	#box1{
+		float: left;
+		width: 32.5%;
+	}
+	#box2 {
+		float: left;
+		width: 32.5%;
+	}  
+	#box3{
+		float: left;
+		width: 32.5%;
+	} 
+}
+
+/***********For tablet view only***********/
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+	
+	#box1{
+		position: absolute;
+		width: 47%;
+	}
+	#box2{
+		width:47%;
+		float: right;
+
+	}
+	#box3{
+		width:100%;
+		clear: both;
+
+	}
+}
+
+/*********For Mobile view only***********/
+
+@media (max-width: 768px) 
+{
+	#box1{
+		width: 100%;
+	}
+	#box2{
+		width: 100%;
+	}
+	#box3{
+		width: 100%;
+	}
+
+}
+</style>
+</head>
+<body>
+<h1>Batman Triology</h1>
+<br>
+<div class="row">
+	<div id="box1" class="para">
+		<p class="sec1">Batman Begins</p>
+		<p class="content">After witnessing his parents' death, Bruce learns the art of fighting to confront injustice. When he returns to Gotham as Batman, he must stop a secret society that intends to destroy the city.</p></div>
+	<div id="box2" class="para">
+		<p class="sec2">The Dark Knight</p>
+		<p class="content">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker, a psychopathic criminal mastermind who offers to kill Batman and bring the city to it.</p></div>
+	<div id="box3" class="para">
+		<p class="sec3">The Dark knight rises</p>
+		<p class="content">Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.</p></div>
+</div>
+</body>
+</html>
